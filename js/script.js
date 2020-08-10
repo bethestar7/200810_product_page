@@ -204,7 +204,7 @@ $(document).ready(function(){
 
     $('.pager li').click(function(){
         var $pager_txt = $(this).text(); //인덱스 번호도 괜찮음
-        //$('.pd_box').show();
+        $('.pd_box').show();
         $('.pd_box').eq($ea_item * ($pager_txt - 1)).prevAll().hide();
         $('.pd_box').eq($ea_item * $pager_txt - 1).nextAll().hide();
 
